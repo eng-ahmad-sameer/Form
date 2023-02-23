@@ -9,6 +9,7 @@ import PositionDetailsStep from "../PositionDetailsStep";
 import CompensationPlanStep from "../CompensationPlanStep";
 import BenefitsStep from "../BenefitsStep";
 import "../../App.css";
+import FinishPage from "../FinishPage";
 
 const steps = ["Position Details", "Compensation Plan", "Benefits"];
 
@@ -84,6 +85,8 @@ function FormStepper() {
             formValues={formValues}
           />
         );
+      case 3:
+        return <FinishPage />;
       default:
         throw new Error("Unknown step");
     }
