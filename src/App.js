@@ -16,9 +16,8 @@ function App() {
         sx={{
           my: 5,
           mb: 8,
-          display: "flex",
-          justifyContent: "space-between",
         }}
+        class="responsive-header"
       >
         <Typography variant="h4" align="center">
           PERSONNEL HIRING REQUEST

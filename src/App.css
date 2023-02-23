@@ -75,3 +75,17 @@
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: black !important;
 }
+.responsive-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 10px;
+}
+@media (max-width: 800px) {
+  .responsive-header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
